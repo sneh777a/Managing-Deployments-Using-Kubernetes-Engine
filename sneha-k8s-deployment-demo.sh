@@ -9,14 +9,29 @@
 # ==========================================================
 
 AUTHOR="Sneha Ghosh"
-CLUSTER="demo-cluster"
-ZONE="us-central1-a"
-APP_NAME="demo-app"
 
 echo "=================================================="
 echo " Kubernetes Deployment Strategies Demo"
 echo " Created by: $AUTHOR"
 echo "=================================================="
+echo ""
+
+# Ask user for inputs (with defaults)
+
+read -p "Enter Cluster Name [default: demo-cluster]: " CLUSTER
+CLUSTER=${CLUSTER:-demo-cluster}
+
+read -p "Enter Zone (example: us-central1-a) [default: us-central1-a]: " ZONE
+ZONE=${ZONE:-us-central1-a}
+
+read -p "Enter Application Name [default: demo-app]: " APP_NAME
+APP_NAME=${APP_NAME:-demo-app}
+
+echo ""
+echo "Using Configuration:"
+echo "Cluster Name: $CLUSTER"
+echo "Zone: $ZONE"
+echo "App Name: $APP_NAME"
 echo ""
 
 # Step 1: Create GKE Cluster
@@ -25,6 +40,9 @@ gcloud container clusters create $CLUSTER \
   --zone $ZONE \
   --machine-type e2-small \
   --num-nodes 3
+
+# Get credentials
+gcloud container clusters get-credentials $CLUSTER --zone $ZONE
 
 echo "Cluster created successfully."
 echo ""

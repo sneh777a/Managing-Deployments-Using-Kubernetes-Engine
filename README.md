@@ -16,45 +16,16 @@ The lab focuses on:
 This repository documents my hands-on implementation and understanding of Kubernetes deployment strategies.
 
 ---
+.
 
-## 🏗 Technologies Used
+###🚀 Run the Automation Script
 
-- Google Cloud Platform (GCP)
-- Google Kubernetes Engine (GKE)
-- kubectl
-- Cloud Shell
-- NGINX container image
+You can run the Kubernetes deployment automation script directly from Google Cloud Shell.
 
----
-
-## 🔧 What I Practiced
-
-### 1️⃣ Cluster Creation
-Provisioned a GKE cluster with multiple nodes.
-
-### 2️⃣ Application Deployment
-Deployed an NGINX application using a Kubernetes Deployment resource.
-
-### 3️⃣ Horizontal Scaling
-Scaled application replicas dynamically and observed pod scheduling behavior.
-
-### 4️⃣ Rolling Updates
-Upgraded container versions while maintaining service availability.
-
-### 5️⃣ ReplicaSet Management
-Understood how Deployments manage ReplicaSets during updates.
-
----
-
-## 🧠 Key Learnings
-
-- How Kubernetes maintains desired state
-- How rolling updates ensure zero downtime
-- How scaling affects load distribution
-- How Services expose applications externally
-- The relationship between Pods, ReplicaSets, and Deployments
-
----
+Option 1 — Download and Run
+curl -LO https://raw.githubusercontent.com/sneh777a/Managing-Deployments-Using-Kubernetes-Engine/main/sneha-k8s-deployment-demo.sh
+chmod +x sneha-k8s-deployment-demo.sh
+./sneha-k8s-deployment-demo.sh
 
 ## ⚠️ Educational Purpose
 
@@ -62,12 +33,6 @@ This repository reflects my personal hands-on practice using Google Cloud Skills
 All lab infrastructure and original content belong to Google Cloud.
 
 The purpose of this project is to demonstrate learning and practical understanding of Kubernetes deployment management.
-
----
-
-## 💼 Resume Impact
-
-Hands-on experience with Kubernetes deployment strategies on Google Cloud Platform, including scaling, rolling updates, and cluster management.
 
 ---
 

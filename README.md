@@ -22,10 +22,12 @@ This repository documents my hands-on implementation and understanding of Kubern
 
 You can run the Kubernetes deployment automation script directly from Google Cloud Shell.
 
+```
 Option 1 — Download and Run
 curl -LO https://raw.githubusercontent.com/sneh777a/Managing-Deployments-Using-Kubernetes-Engine/main/sneha-k8s-deployment-demo.sh
 chmod +x sneha-k8s-deployment-demo.sh
 ./sneha-k8s-deployment-demo.sh
+```
 
 ## ⚠️ Educational Purpose
 
